@@ -11,12 +11,12 @@ body{
     width: 90%;
     box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
 }
-#formKeliling{
+#formAround{
     display: none;
 }
 #logo{
     float: left;
-    width: 15%;
+    width: 12%;
     margin-left: 2%;
 }
 ul {
@@ -43,7 +43,7 @@ li a:active{
     background-color: hsl(214, 99%, 61%);
 }
 h1{
-    margin-top: 10%;
+    margin-right: 5%;
     color: aliceblue;
     text-align: center;
 }
@@ -68,7 +68,7 @@ h1{
     text-align: center;
     border-radius: 10px;
     width: 90%;
-    box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
 }
 label{
     margin-bottom: 3px;
@@ -104,6 +104,7 @@ button{
 }
 button:hover{
     background-color: rgb(134, 182, 246);
+    box-shadow: 0px 0px 5px 0px aliceblue;
 }
 button:active{
     background-color: rgb(2, 2, 83);
@@ -116,7 +117,7 @@ button:active{
     align-items: center;
     margin-top: 26px;
 }
-#luas{
+#area{
     border-radius: 10px;
     padding: 6px;
     border: 1px solid rgb(174, 199, 250);
@@ -124,7 +125,7 @@ button:active{
     text-align: center;
     margin: 0;
 }
-#keliling{
+#around{
     border-radius: 10px;
     padding: 6px;
     border: 1px solid rgb(174, 199, 250);
@@ -138,7 +139,7 @@ button:active{
     padding: 10px;
     text-align: center;
     border-radius: 10px;
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
     margin-top: 24px;
     box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);

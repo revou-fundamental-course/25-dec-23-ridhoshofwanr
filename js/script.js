@@ -1,32 +1,46 @@
-function luasSegitiga(){
-    let alas = document.getElementById("input-alas").value;
-    let tinggi = document.getElementById("input-tinggi").value;
-    let luas = alas * tinggi / 2;
-    document.getElementById("luas").value = luas;
+function areaTriangle(){
+    var base = document.getElementById("input-base").value;
+    var height = document.getElementById("input-height").value;
+    if (base>0 && height>0){
+        var area = base * height / 2;
+        document.getElementById("area").value = area;     
+    } else{
+        alert("Masukkan Nilai Yang Valid untuk alas dan tinggi!");
+    }
 }
-function kelilingSegitiga(){
-    let sisi1 = document.getElementById("input-sisi1").value;
-    let sisi2 = document.getElementById("input-sisi2").value;
-    let sisi3 = document.getElementById("input-sisi3").value;
-    let keliling = parseInt(sisi1) + parseInt(sisi2) + parseInt(sisi3);
-    document.getElementById("keliling").value = keliling;
+function aroundTriangle(){
+    var side1 = document.getElementById("input-side1").value;
+    var side2 = document.getElementById("input-side2").value;
+    var side3 = document.getElementById("input-side3").value;
+    if (side1>0 && side2>0 && side3>0){
+        var around = parseInt(side1) + parseInt(side2) + parseInt(side3);
+        document.getElementById("around").value = around;
+    } else{
+
+        alert("Masukkan Nilai Yang Valid untuk ketiga sisi segitiga!");
+    }
 }
-function ResetForm1(){
-    document.getElementById("luas").value ="";
-    document.getElementById("input-alas").value="";
-    document.getElementById("input-tinggi").value="";
+function ResetFormArea(){
+    document.getElementById("area").value ="";
+    document.getElementById("input-base").value="";
+    document.getElementById("input-height").value="";
 }
-function ResetForm2(){
-    document.getElementById("keliling").value="";
-    document.getElementById("input-sisi1").value="";
-    document.getElementById("input-sisi2").value="";
-    document.getElementById("input-sisi3").value="";
+function ResetFormAround(){
+    document.getElementById("around").value="";
+    document.getElementById("input-side1").value="";
+    document.getElementById("input-side2").value="";
+    document.getElementById("input-side3").value="";
 }
-function changeForm1(){
-    document.getElementById("formLuas").style.display = "block";
-    document.getElementById("formKeliling").style.display = "none";
+
+function changeForm(){
+    var formArea = document.getElementById("formArea");
+    var formAround = document.getElementById("formAround");
+    if (formArea.style.display === "none"){
+        formArea.style.display = "block";
+        formAround.style.display = "none";
+    } else{
+        formArea.style.display = "none";
+        formAround.style.display = "block";
+    }
 }
-function changeForm2(){
-    document.getElementById("formLuas").style.display = "none";
-    document.getElementById("formKeliling").style.display = "block";
-}
+
