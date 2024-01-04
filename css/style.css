@@ -1,0 +1,149 @@
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#navigation-bar {
+    display: block;
+    background-color:#79abf1;
+    padding: 10px;
+    margin: 0 auto 24px auto;
+    text-align: center;
+    border-radius: 10px;
+    width: 80%;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+}
+#formKeliling{
+    display: none;
+}
+#logo{
+    float: left;
+    width: 20%;
+    margin-left: 5%;
+}
+ul {
+    list-style-type: none;
+    padding: 0;
+    overflow: hidden;
+    border-radius: 2%;
+}
+li {
+    float: right;
+    margin-right: 2%;
+}
+li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}  
+li a:hover {
+    background-color: rgb(134, 182, 246);
+}
+li a:active{
+    background-color: hsl(214, 99%, 61%);
+}
+h1{
+    margin-top: 12%;
+    color: aliceblue;
+    text-align: center;
+}
+#p1{
+    color: aliceblue;
+    font-size : small;
+    text-align: center;
+}
+/* Input Section */
+.input-section-luas{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    margin: 0 auto 24px auto;
+    text-align: center;
+    border-radius: 10px;
+    width: 80%;
+    box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.75);
+}
+.input-section-keliling{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    margin: 0 auto 24px auto;
+    text-align: center;
+    border-radius: 10px;
+    width: 80%;
+    box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.75);
+}
+label{
+    margin-bottom: 3px;
+    font-weight: bold;
+}
+.katik-input{
+    outline: none;
+    border-radius: 5px;
+    padding: 6px;
+    border: 1px solid #aec7fa;
+    width: 25%;
+    height: 10%;
+}
+.katik-input:focus{
+    border: 1px solid blue;
+}
+.buttons{
+    display: flex;
+    align-self: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+button{
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(180, 212, 255);
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+button:hover{
+    background-color: rgb(134, 182, 246);
+}
+button:active{
+    background-color: rgb(2, 2, 83);
+    transform: translateY(2px);
+}
+/* Output Section */
+.output-luas-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 26px;
+}
+#luas{
+    border-radius: 10px;
+    padding: 6px;
+    border: 1px solid rgb(174, 199, 250);
+    width: 200px;
+    text-align: center;
+    margin: 0;
+}
+#keliling{
+    border-radius: 10px;
+    padding: 6px;
+    border: 1px solid rgb(174, 199, 250);
+    width: 200px;
+    text-align: center;
+    margin: 0;
+}
+/* Footer */
+#footer{
+    background-color:hsl(215, 81%, 71%);
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 24px;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+    color: aliceblue;
+    font-size: small;
+}
